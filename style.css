@@ -12,3 +12,177 @@ body {
   color: white;
   font-family: Arial, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #101010;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  min-height: 85vh;
+  background:
+    linear-gradient(#0009, #000c),
+    url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400")
+    center/cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+}
+
+nav h2 {
+  color: #d4a373;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 6vw, 65px);
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  color: #d4a373;
+}
+
+.explore {
+  display: inline-block;
+  margin-top: 25px;
+  background: #d4a373;
+  padding: 15px 25px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 20px;
+  text-align: center;
+}
+
+main h2 {
+  color: #d4a373;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.product {
+  background: #202020;
+  padding: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-bottom: 8px;
+}
+
+.product p {
+  color: #d4a373;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+button {
+  background: #d4a373;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.cart {
+  background: #202020;
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+#cartItems {
+  line-height: 2;
+}
+
+.whatsapp {
+  background: #25d366;
+  margin-top: 15px;
+}
+
+footer {
+  background: #080808;
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav h2 {
+    font-size: 17px;
+  }
+
+  .hero-content {
+    padding: 110px 15px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    height: 200px;
+  }
+
+  .cart {
+    padding: 20px;
+  }
+}
