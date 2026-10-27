@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BLACK BREW | Premium Café</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav>
+    <h2>BLACK BREW.</h2>
+    <a href="#menu">Explore Menu</a>
+  </nav>
+
+  <div class="hero-content">
+    <p>WELCOME TO BLACK BREW</p>
+    <h1>COFFEE. CULTURE. COMFORT.</h1>
+    <p>Every cup tells a story.</p>
+    <a class="explore" href="#menu">
+      Discover Our Menu
+    </a>
+  </div>
+</header>
+
+<main id="menu">
+
+  <h2>OUR SIGNATURE MENU</h2>
+  <p class="subtitle">
+    Crafted with passion, served with love.
+  </p>
+
+  <div class="menu-grid">
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+        alt="Coffee"
+      >
+      <h3>Classic Espresso</h3>
+      <p>₹99</p>
+      <button onclick="addToCart('Espresso',99)">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+        alt="Cold Coffee"
+      >
+      <h3>Cold Coffee</h3>
+      <p>₹169</p>
+      <button onclick="addToCart('Cold Coffee',169)">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600"
+        alt="Cappuccino"
+      >
+      <h3>Cappuccino</h3>
+      <p>₹149</p>
+      <button onclick="addToCart('Cappuccino',149)">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600"
+        alt="Sandwich"
+      >
+      <h3>Cheese Sandwich</h3>
+      <p>₹129</p>
+      <button onclick="addToCart('Sandwich',129)">
+        Add to Order
+      </button>
+    </div>
+
+  </div>
+
+  <section class="cart">
+    <h2>YOUR ORDER</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button class="whatsapp" onclick="checkout()">
+      Order via WhatsApp
+    </button>
+  </section>
+
+</main>
+
+<footer>
+  BLACK BREW © 2026
+  <p>Made with passion ☕</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
